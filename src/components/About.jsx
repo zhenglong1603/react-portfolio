@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.png"
+import aboutImg from "../assets/aboutPic.jpg"
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -24,11 +24,13 @@ const About = () => {
             className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start text-justify">
                         <p className="my-2 max-w-xl py-6">
-                        I am a motivated and adaptable learner always seeking to upskill. As a Business Analytics student under the School of Computing, I have had hands-on experience working with technologies like Python and Java, and various languages used in data analytics such as MySQL and R.
-                        My journey in programming initially began with a deep curiosity for how things work, coupled by a passion for ideation and value creation, and it has evolved into a passion for pursuing a career where I can leverage technology to drive meaningful change in businesses.
+                        I am a motivated and adaptable learner always seeking to upskill. As a Computer Science student under the School of Computing, I have had hands-on experience working with technologies like Python, Java and C++.
                         <br />
                         <br />
                         I am always eager to expand my knowledge and embrace new challenges. Beyond my academic pursuits, I actively engage in self-directed learning to explore new technologies. Currently, I am passionate about learning to create efficient, user-centric web applications using HTML, CSS, and JavaScript.
+                        <br />
+                        <br />
+                        Outside the rat race, I enjoy coding my own fun projects, watching football whilst savoring coffee, whiskey, & the smaller things in life. Honestly, I just try my best to live a fulfilling life — don't we all?
                         </p>
                     </div>
                 </motion.div>
