@@ -1,4 +1,3 @@
-import profilePic from "../assets/blank.jpg";
 import { motion } from "framer-motion";
 import resume from "../assets/Sue_Zheng_Long_Resume.pdf";
 
@@ -35,7 +34,7 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                     className="my-2 max-w-xl py-6 tracking-tighter text-justify text-center">
-                        Welcome to my portfolio! I'm a Year 2 Computer Science student at the National University of Singapore (NUS). Passionate about Software Engineering and Artificial Intelligence, I enjoy collaborating with teams and working independently to solve challenging problems.
+                        Welcome to my portfolio! I&apos;m a Year 2 Computer Science student at the National University of Singapore (NUS). Passionate about Software Engineering and Artificial Intelligence, I enjoy collaborating with teams and working independently to solve challenging problems.
                     </motion.p>
 
                     <a href={resume} download>

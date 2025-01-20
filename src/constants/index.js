@@ -1,22 +1,22 @@
 import portfoliopic from "../assets/projects/portfoliopic.png";
 import blogpic from "../assets/projects/blogpic.png";
 import splitbee from "../assets/projects/splitbee.png";
-import blank from "../assets/blank.jpg";
+import geoNUS from "../assets/projects/geoNUS.png";
 
 export const EXPERIENCES = [
   {
     year: "Oct'24 - Present",
     role: "Software Developer Volunteer",
     company: "BETTER.SG",
-    description: `Working on a web application to facilitate message verification.`,
-    technologies: ["ReactJS", "Firebase", "Pandas", "Project Management"],
+    description: `Working on projects for social good.`,
+    technologies: ["React.js", "Firebase", "Project Management"],
   },
   {
     year: "Aug'24 - Dec'24",
     role: "Undergraduate Teaching Assistant - CS1101S Programming Methodology",
     company: "NUS Computing",
     description: `Taught programming concepts in Java. Facilitated weekly tutorial sessions and evaluation of the students' assignments.`,
-    technologies: ["Java", "Object-Oriented Programming", "Algorithms", "Teaching"],
+    technologies: ["Java", "Object-Oriented Programming", "Teaching"],
   },
   {
     year: "Jan'23 - Jul'23",
@@ -33,14 +33,14 @@ export const PROJECTS = [
     image: portfoliopic,
     description:
       "A personal portfolio showcasing my experience, technical skills, and web development projects.",
-    technologies: ["ReactJS", "Tailwind CSS", "Framer Motion"],
+    technologies: ["Vite", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "Blog Website",
     image: blogpic,
     description:
       "A blog portfolio recording my experience, notes, and reflections.",
-    technologies: ["VueJS", "Tailwind CSS"],
+    technologies: ["Vue.js", "Tailwind CSS"],
   },
   {
     title: "SplitBee",
@@ -51,9 +51,9 @@ export const PROJECTS = [
   },
   {
     title: "GeoNUS",
-    image: blank,
+    image: geoNUS,
     description:
-      "WIP",
-    technologies: ["Flutter", "Firebase", "Figma"],
+      "An adaptation of GeoGuesser for NUS made during Hack&Roll 2025. Made use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
+    technologies: ["Next.js", "PostgreSQL", "Google Maps API", "Vercel Blob Storage"],
   }
 ];

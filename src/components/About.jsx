@@ -30,7 +30,7 @@ const About = () => {
                         I am always eager to expand my knowledge and embrace new challenges. Beyond my academic pursuits, I actively engage in self-directed learning to explore new technologies. Currently, I am passionate about learning to create efficient, user-centric web applications using HTML, CSS, and JavaScript.
                         <br />
                         <br />
-                        Outside the rat race, I enjoy coding my own fun projects, watching football whilst savoring coffee, whiskey, & the smaller things in life. Honestly, I just try my best to live a fulfilling life — don't we all?
+                        Outside the rat race, I enjoy coding my own fun projects, watching football whilst savoring coffee, whiskey, & the smaller things in life. Honestly, I just try my best to live a fulfilling life — don&apos;t we all?
                         </p>
                     </div>
                 </motion.div>
