@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import resume from "../assets/Sue_Zheng_Long_Resume.pdf";
+// import resume from "../assets/Sue_Zheng_Long_Resume.pdf";
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -37,7 +37,7 @@ const Hero = () => {
                         Welcome to my portfolio! I&apos;m a Year 2 Computer Science student at the National University of Singapore (NUS). Passionate about Software Engineering and Artificial Intelligence, I enjoy collaborating with teams and working independently to solve challenging problems.
                     </motion.p>
 
-                    <a href={resume} download>
+                    {/* <a href={resume} download>
                         <motion.button
                             whileHover={{
                                 scale: 1.05,
@@ -48,7 +48,7 @@ const Hero = () => {
                         >
                             Download Resume
                         </motion.button>
-                    </a>
+                    </a> */}
                 </div>
             </div>
             {/* <div className="w-full lg:w-1/2 lg:p-8">
