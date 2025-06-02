@@ -5,7 +5,7 @@ import geoNUS from "../assets/projects/geoNUS.png";
 
 export const EXPERIENCES = [
   {
-    year: "Oct'24 - Present",
+    year: "Oct'24 - Apr'25",
     role: "Software Developer Volunteer",
     company: "BETTER.SG",
     description: `Working on projects for social good.`,
