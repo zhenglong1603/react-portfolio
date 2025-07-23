@@ -27,10 +27,10 @@ const About = () => {
                         I am a motivated and adaptable learner always seeking to upskill. As a Computer Science student under the School of Computing, I have had hands-on experience working with technologies like Python, Java and C++.
                         <br />
                         <br />
-                        I am always eager to expand my knowledge and embrace new challenges. Beyond my academic pursuits, I actively engage in self-directed learning to explore new technologies. Currently, I am passionate about learning to create efficient, user-centric web applications using HTML, CSS, and JavaScript.
+                        I am always eager to expand my knowledge and embrace new challenges. Beyond my academic pursuits, I actively engage in self-directed learning to explore new technologies. 
                         <br />
                         <br />
-                        Outside the rat race, I enjoy coding my own fun projects, watching football, find some coins & the smaller things in life. Honestly, I just try my best to live a fulfilling life — don&apos;t we all?
+                        Outside the rat race, I enjoy coding my own fun projects, watching football, find some silver coins & the smaller things in life. Honestly, I just try my best to live a fulfilling life and live with no regrets— don&apos;t we all?
                         </p>
                     </div>
                 </motion.div>
