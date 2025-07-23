@@ -11,11 +11,11 @@ Welcome to my portfolio website! This project showcases my skills, experiences, 
 ## Features
 The main code used can be found in the `src` folder.
 - `App.jsx` contains the main frame of the website. Any additional sections in the `components` folder has to be included in the `App.jsx` file, else errors will occur.
-- The `assets` folder contains the images and files used within the website (namely pictures displayed and resume).
+- The `assets` folder contains the images and files used within the website (namely pictures displayed).
 - The `components` folder contains the different segments used within the website.
     - `Navbar.jsx` contains code for the topmost bar (logo + linkedin + github).
     - `Hero.jsx` contains code for the portfolio card (name + course + description).
-    - `About.jsx` contains code for the about section (about me)
+    - `About.jsx` contains code for the about section (about me).
     - `Technologies.jsx` contains code about the tech stack display (floating icons with hover).
     - `Experience.jsx` contains code for the timeline. It retrieves the information from the `constants` folder under `index.js`, and maps the information to the site. Any changes to the Experience section should be made within the `index.js` file.
     - `Projects.jsx` contains code for the project list. It retrieves the information from the `constants` folder under `index.js`, and maps the information to the site. Any changes to the Projects section should be made within the `index.js` file.
