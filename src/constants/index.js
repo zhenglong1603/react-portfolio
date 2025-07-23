@@ -8,7 +8,7 @@ export const EXPERIENCES = [
     year: "Oct'24 - Apr'25",
     role: "Software Developer Volunteer",
     company: "BETTER.SG",
-    description: `Working on projects for social good.`,
+    description: `Worked on projects for social good.`,
     technologies: ["React.js", "Firebase", "Project Management"],
   },
   {
@@ -48,12 +48,14 @@ export const PROJECTS = [
     description:
       "A bill-splitting application that allows users to split bills among friends.",
     technologies: ["Flutter", "Firebase", "Figma"],
+    link: "https://drive.google.com/drive/u/0/folders/1bJLXAkLW5_3ajXyUZlFoLAbaCECaCdTh"
   },
   {
     title: "GeoNUS",
     image: geoNUS,
     description:
-      "An adaptation of GeoGuesser for NUS made during Hack&Roll 2025. Made use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
+      "An adaptation of GeoGuesser for NUS made during Hack&Roll 2025.\nMade use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
     technologies: ["Next.js", "PostgreSQL", "Google Maps API", "Vercel Blob Storage"],
+    link: "https://geo-nus.vercel.app/"
   }
 ];

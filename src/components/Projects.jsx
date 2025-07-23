@@ -28,10 +28,21 @@ const Projects = () => {
                     transition={{duration: 1 }}
                     className="w-full max-w-xl lg:w-3/4">
                         <h6 className="mb-2 font-semibold">{project.title}</h6>
-                        <p className="mb-4 text-neutral-400">{project.description}</p>
+                        <p className="mb-4 text-neutral-400 whitespace-pre-line">{project.description}</p>
                         {project.technologies.map((tech, index) => (
                             <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500">{tech}</span>
                         ))}
+                        <br />
+                        {project.link && (
+                         <a
+                         href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-2 rounded bg-purple-600 px-4 py-2 text-sm text-white transition hover:bg-purple-700"
+                            >
+                            View Project
+                        </a>
+                    )}
                     </motion.div>
                 </div>
             ))}
