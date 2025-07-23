@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -21,13 +21,6 @@ const Navbar = () => {
           rel="noopener noreferrer" 
           aria-label="GitHub Profile">
           <FaGithub />
-        </a>
-        <a 
-          href="https://www.instagram.com/zhenglong___" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          aria-label="Instagram Profile">
-          <FaInstagram />
         </a>
       </div>
     </nav>

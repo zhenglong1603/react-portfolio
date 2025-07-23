@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="border-b border-neutral-900 pb-20">
@@ -25,13 +25,6 @@ const Contact = () => {
                 rel="noopener noreferrer" 
                 aria-label="GitHub Profile">
                 <FaGithub />
-              </a>
-              <a 
-                href="https://www.instagram.com/zhenglong___" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Instagram Profile">
-                <FaInstagram />
               </a>
             </div>
         </div>
