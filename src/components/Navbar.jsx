@@ -1,4 +1,3 @@
-import logo from "../assets/logo.png";
 import { FaLinkedin, FaGithub} from "react-icons/fa";
 
 const Navbar = () => {
