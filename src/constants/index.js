@@ -2,6 +2,7 @@ import portfoliopic from "../assets/projects/portfoliopic.png";
 import blogpic from "../assets/projects/blogpic.png";
 import splitbee from "../assets/projects/splitbee.png";
 import geoNUS from "../assets/projects/geoNUS.png";
+import klinix from "../assets/projects/klinix.png";
 
 export const EXPERIENCES = [
   {
@@ -57,5 +58,13 @@ export const PROJECTS = [
       "An adaptation of GeoGuesser for NUS made during Hack&Roll 2025.\nMade use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
     technologies: ["Next.js", "PostgreSQL", "Google Maps API", "Vercel Blob Storage"],
     link: "https://geo-nus.vercel.app/"
+  },
+  {
+    title: "Klinix",
+    image: klinix,
+    description:
+      "A desktop app targeted towards general practitioners.\nKlinix helps them to quickly access and keep track of patient records, appointments, and medicine needs.",
+    technologies: ["JavaFX", "JUnit", "Jackson"],
+    link: "https://ay2425s2-cs2103t-t09-2.github.io/tp/index.html"
   }
 ];
