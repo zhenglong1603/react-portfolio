@@ -1,163 +1,50 @@
-import pythonlogo from "../assets/python.png";
-import javalogo from "../assets/java.png";
-import rlogo from "../assets/R.png";
-import mysqllogo from "../assets/mysql.png";
-import htmllogo from "../assets/html.png";
-import csslogo from "../assets/css.png";
-import jslogo from "../assets/js.png";
-import reactjslogo from "../assets/reactjs.png";
-import nodejslogo from "../assets/nodejs.png";
 import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
-  animate: {
-    y: [10, -10],
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-});
+const techStack = {
+  "Programming Languages": ["Python", "C++", "JavaScript", "TypeScript", "SQL", "HTML/CSS",  "Java"],
+  "Frontend Development": ["React.js", "Next.js", "Tailwind", "Material-UI", "Angular", "Vue"],
+  "Backend Development": ["Node.js", "Express.js", "Next.js", "Firebase", ],
+  "Dev-Ops": ["Git", "GitHub", "Docker", "Vercel", "Heroku", "Netlify"],
+  "Others":  ["Enlish", "Chinese", "Floorball", "Trading"]
+};
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b border-neutral-900 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl dark:text-white"
       >
-        Technology
+        Technical Skills
       </motion.h1>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
-      >
-        {/* Python */}
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={pythonlogo} alt="Python" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            Python
-          </div>
-        </motion.div>
 
-        {/* Java */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={javalogo} alt="Java" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            Java
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+        {Object.entries(techStack).map(([category, techs]) => (
+          <div
+            key={category}
+            className="rounded-xl border border-neutral-300 dark:border-neutral-700 bg-transparent p-6 shadow-md"
+          >
+            <h2 className="text-xl font-semibold mb-4 border-b border-purple-300 pb-2 dark:text-white">
+              {category}
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {techs.map((tech) => (
+                <div
+                  key={tech}
+                  className="rounded bg-purple-600 text-white dark:bg-neutral-900 dark:text-purple-500 border border-transparent dark:border-neutral-500 px-2 py-1 text-sm font-medium transition"
+                >
+                  {tech}
+                </div>
+              ))}
+            </div>
           </div>
-        </motion.div>
-
-        {/* R */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={rlogo} alt="R" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            R
-          </div>
-        </motion.div>
-
-        {/* MySQL */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={mysqllogo} alt="MySQL" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            MySQL
-          </div>
-        </motion.div>
-
-        {/* HTML */}
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={htmllogo} alt="HTML" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            HTML
-          </div>
-        </motion.div>
-
-        {/* CSS */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={csslogo} alt="CSS" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            CSS
-          </div>
-        </motion.div>
-
-        {/* JavaScript */}
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={jslogo} alt="JavaScript" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            JavaScript
-          </div>
-        </motion.div>
-
-        {/* React */}
-        <motion.div
-          variants={iconVariants(1.5)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={reactjslogo} alt="React" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            ReactJS
-          </div>
-        </motion.div>
-
-        {/* NodeJS */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="group relative rounded-2xl border-2 border-neutral-800 p-4"
-        >
-          <img src={nodejslogo} alt="NodeJS" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-neutral-800 bg-opacity-75 text-white text-lg font-semibold p-2">
-            NodeJS
-          </div>
-        </motion.div>
-      </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default Technologies;
+
