@@ -6,6 +6,20 @@ import klinix from "../assets/projects/klinix.png";
 
 export const EXPERIENCES = [
   {
+    year: "Aug'25 - Nov'25",
+    role: "Data Engineer Intern",
+    company: "Singapore Land Authority",
+    description: `- Worked on projects for GeoSpatial Survey and Data Department.`,
+    technologies: ["QGIS", "Python", "PostgreSQL"],
+  },
+  {
+    year: "Aug'25 - Nov'25",
+    role: "Undergraduate Teaching Assistant - CS2103T Software Engineering",
+    company: "NUS Computing",
+    description: `- Taught necessary conceptual and analytical tools for software engineering.\n- Facilitated weekly tutorial sessions and evaluation of the students' assignments.`,
+    technologies: ["UML Diagrams", "Software Testing", "Software Development Life Cycle"],
+  },
+  {
     year: "Oct'24 - Apr'25",
     role: "Software Developer Volunteer",
     company: "BETTER.SG",
