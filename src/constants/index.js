@@ -3,6 +3,7 @@ import blogpic from "../assets/projects/blogpic.png";
 import splitbee from "../assets/projects/splitbee.png";
 import geoNUS from "../assets/projects/geoNUS.png";
 import klinix from "../assets/projects/klinix.png";
+import hudp from "../assets/projects/hudp.png";
 
 export const EXPERIENCES = [
   {
@@ -16,7 +17,7 @@ export const EXPERIENCES = [
     year: "Aug'25 - Nov'25",
     role: "Undergraduate Teaching Assistant - CS2103T Software Engineering",
     company: "NUS Computing",
-    description: `- Taught necessary conceptual and analytical tools for software engineering.\n- Facilitated weekly tutorial sessions and evaluation of the students' assignments.`,
+    description: `- Taught necessary conceptual and analytical tools for software engineering.`,
     technologies: ["UML Diagrams", "Software Testing", "Software Development Life Cycle"],
   },
   {
@@ -66,12 +67,18 @@ export const PROJECTS = [
     link: "https://drive.google.com/drive/u/0/folders/1bJLXAkLW5_3ajXyUZlFoLAbaCECaCdTh"
   },
   {
+    title: "Custom Transport Protocol (H-UDP)",
+    image: hudp,
+    description:
+      "A custom transport-layer protocol designed to bridge the gap between the speed of UDP and the reliability of TCP.\nH-UDP allows for low-latency transmission of time-sensitive data while ensuring critical messages are delivered through a Go-Back-N (GBN) reliability layer.",
+    technologies: ["Python", "Socket Programming", "Go-Back-N Protocol"],
+  },
+  {
     title: "GeoNUS",
     image: geoNUS,
     description:
-      "An adaptation of GeoGuesser for NUS made during Hack&Roll 2025.\nMade use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
+      "An adaptation of GeoGuessr for NUS made during Hack&Roll 2025.\nMade use of crowdsourced photos instead of StreetView so that users can submit unique photos and contribute to the game.",
     technologies: ["Next.js", "PostgreSQL", "Google Maps API", "Vercel Blob Storage"],
-    link: "https://geo-nus.vercel.app/"
   },
   {
     title: "Klinix",
@@ -80,5 +87,5 @@ export const PROJECTS = [
       "A desktop app targeted towards general practitioners.\nKlinix helps them to quickly access and keep track of patient records, appointments, and medicine needs.",
     technologies: ["JavaFX", "JUnit", "Jackson"],
     link: "https://ay2425s2-cs2103t-t09-2.github.io/tp/index.html"
-  }
+  },
 ];
